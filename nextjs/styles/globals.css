@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'YourFontName';
+  src: url('../public/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  /* add more properties if needed */
+}
+
+* {
+}
+
+body {
+  font-family: 'YourFontName', sans-serif;
+  background-color:  #303841;
+  color:  white;
+  margin:  0;
+  padding:  0;
+}
+
+p {
+  margin-bottom:  1em;
+  padding:  0;
+}
+
+a {
+  color:  #99c794;
+}
+
+h1 {
+  color:  #00ff00;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin: 0 0 0.5em 0;
+  color:  #ec6066;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically if there's extra space */
+  width: 100%;
+  max-width: 1000px; /* Adjust based on your column width */
+  margin-bottom: 3em;
+  padding: 3em 0;
+  border-bottom: 1px dotted white;
+}
+
+
+.columns-container {
+  display: flex;
+  justify-content: center; /* Align columns to the start */
+  flex-wrap: wrap; /* Allows columns to wrap onto a new line */
+  gap: 4em; /* Space between columns */
+  width: 100%;
+  max-width: 1060px; /* Adjust based on your total desired width including gaps */
+}
+
+.column {
+  width:  475px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 90%;
+    word-wrap: break-word;
+  }
+}
+
+div.section {
+  margin-bottom:  3em;
+}
+
+#col-left {
+}
+
+#col-right {
+
+}
+
+ul {
+  margin:  0;
+  padding: 0 0 0 1.5em;
+}
+
+ol {
+  margin:  0;
+  padding: 0 0 0 2em;
+}
+
+ul li {
+
+}
+
+.responsive {
+  width:  100%;
+  height:  auto;
+}
+
+.guacanim {
+  width:  33%;
+  height:  auto;
+}
+
+iframe {
+  width:  100%;
+  height:  100%;
+}
+
+.flex-container-claim  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This makes the container take the full viewport height */
+}
+
+.container-claim {
+    text-align: left; /* This centers the text inside your .container div */
+    max-width: 500px;
+    padding:  10px;
+    word-wrap: break-word;
+}
+
+button {
+  padding:  10px 30px;
+   font-family: 'YourFontName', sans-serif;
+}
+
+.error {
+  color:  white;
+  background-color: red;
+  border:  1px solid white;
+  padding:  1em;
+  font-size:  0.75em;
+  margin:  10px 0;
+}
